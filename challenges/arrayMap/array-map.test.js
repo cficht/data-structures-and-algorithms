@@ -13,10 +13,10 @@ describe('testing array-map.js', () => {
     const testArray2 = [2, 4, 6];
     const expectedArray2 = [4, 8, 12];
 
-    it('it should output an array with the function applied to it', () => {
+    it('it should output an array with the function applied', () => {
       expect((map(testArray1, testFunction1))).toEqual(expectedArray1);
     });
-    it('it should output an array with the function applied to it', () => {
+    it('it should output an array with the function applied', () => {
         expect((map(testArray2, testFunction2))).toEqual(expectedArray2);
     });
 });
