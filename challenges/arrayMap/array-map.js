@@ -6,7 +6,6 @@ const map = (arr, func) => {
     return newArr;
 };
 
-
 module.exports = {
     map
 }
