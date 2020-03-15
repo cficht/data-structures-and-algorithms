@@ -10,8 +10,10 @@ class LinkedList {
     this.head = null;
   }
 
-  insert() {
-
+  insert(value) {
+    const newNode = new Node(value, this.head);
+    this.head = newNode;
+    return newNode;
   }
 
   includes() {
