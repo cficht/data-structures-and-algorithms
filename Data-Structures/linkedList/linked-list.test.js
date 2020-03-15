@@ -34,4 +34,21 @@ describe('testing linked-list.js', () => {
         value: 2 } 
     });
   });
+
+  it('properly inserts multiple nodes into the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+
+    expect(linkedList).toEqual({ 
+      head: { 
+        next: { 
+          next: { 
+            next: null, 
+            value: 1 }, 
+          value: 2 }, 
+        value: 3 } 
+    });
+  });
 });
