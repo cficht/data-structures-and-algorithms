@@ -16,8 +16,14 @@ class LinkedList {
     return newNode;
   }
 
-  includes() {
-
+  includes(value) {
+    let bool = false;
+    let currentNode = this.head;
+    while(currentNode) {
+      if(currentNode.value === value) return bool = true;
+      currentNode = currentNode.next;
+    }
+    return bool;
   }
 
   toString() {

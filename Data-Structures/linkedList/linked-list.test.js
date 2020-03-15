@@ -51,4 +51,23 @@ describe('testing linked-list.js', () => {
         value: 3 } 
     });
   });
+
+  it('returns true finding an existing value in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+
+    expect(linkedList.includes(2)).toEqual(true);
+  });
+
+  it('returns false when the value is not in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+
+    expect(linkedList.includes(5)).toEqual(false);
+  });
+
 });
