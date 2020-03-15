@@ -27,11 +27,17 @@ class LinkedList {
   }
 
   toString() {
-
+    let str = '';
+    let currentNode = this.head;
+    while(currentNode) {
+      if(currentNode !== this.head) str += ' -> ';
+      str = `${str}${currentNode.value}`;
+      currentNode = currentNode.next;
+    }
+    return str;
   }
 }
 
 module.exports = {
-  Node,
   LinkedList
 };

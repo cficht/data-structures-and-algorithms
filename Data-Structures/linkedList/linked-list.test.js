@@ -70,4 +70,13 @@ describe('testing linked-list.js', () => {
     expect(linkedList.includes(5)).toEqual(false);
   });
 
+  it('returns a collection of all the values that exist in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+
+    expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2');
+  });
 });
