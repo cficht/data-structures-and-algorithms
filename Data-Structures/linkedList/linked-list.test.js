@@ -12,11 +12,25 @@ describe('testing linked-list.js', () => {
 
   it('properly inserts into the linked list', () => {
     const linkedList = new LinkedList();
-    linkedList.insert(2);
+    linkedList.insert(1);
 
     expect(linkedList).toEqual({ 
       head: { 
         next: null, 
+        value: 1 } 
+    });
+  });
+
+  it('head property points to the first node in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+
+    expect(linkedList).toEqual({ 
+      head: { 
+        next: { 
+          next: null, 
+          value: 1 }, 
         value: 2 } 
     });
   });
