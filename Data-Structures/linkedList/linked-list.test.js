@@ -78,4 +78,15 @@ describe('testing linked-list.js', () => {
 
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2');
   });
+
+  it(' adds a new node with the given value to the end of the list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.append(10);
+
+    expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
+  });
 });
