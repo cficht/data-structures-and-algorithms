@@ -1,6 +1,4 @@
-const {
-  LinkedList
-} = require('./linked-list.js');
+const { LinkedList } = require('./linked-list.js');
 
 describe('testing linked-list.js', () => {
   it('successfully instantiates an empty linked list', () => {
@@ -79,7 +77,7 @@ describe('testing linked-list.js', () => {
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2');
   });
 
-  it(' adds a new node with the given value to the end of the list', () => {
+  it('adds a new node with the given value to the end of the list', () => {
     const linkedList = new LinkedList();
     linkedList.insert(2);
     linkedList.insert(4);
@@ -88,5 +86,16 @@ describe('testing linked-list.js', () => {
     linkedList.append(10);
 
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
+  });
+
+  it('add a new node with the given newValue immediately before the first value node', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insertBefore(4, 10);
+
+    expect(linkedList.toString()).toEqual('8 -> 6 -> 10 -> 4 -> 2');
   });
 });
