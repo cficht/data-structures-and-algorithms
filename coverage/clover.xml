@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587929360350" clover="3.2.0">
-  <project timestamp="1587929360351" name="All files">
-    <metrics statements="80" coveredstatements="65" conditionals="18" coveredconditionals="12" methods="12" coveredmethods="9" elements="110" coveredelements="86" complexity="0" loc="80" ncloc="80" packages="4" files="4" classes="4"/>
+<coverage generated="1587929676225" clover="3.2.0">
+  <project timestamp="1587929676225" name="All files">
+    <metrics statements="81" coveredstatements="66" conditionals="20" coveredconditionals="14" methods="12" coveredmethods="9" elements="113" coveredelements="89" complexity="0" loc="81" ncloc="81" packages="4" files="4" classes="4"/>
     <package name="Data-Structures.linkedList">
-      <metrics statements="59" coveredstatements="59" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9"/>
+      <metrics statements="60" coveredstatements="60" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="9"/>
       <file name="linked-list.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
-        <metrics statements="59" coveredstatements="59" conditionals="12" coveredconditionals="12" methods="9" coveredmethods="9"/>
-        <line num="3" count="53" type="stmt"/>
-        <line num="4" count="53" type="stmt"/>
-        <line num="10" count="14" type="stmt"/>
-        <line num="14" count="45" type="stmt"/>
-        <line num="15" count="45" type="stmt"/>
-        <line num="16" count="45" type="stmt"/>
+        <metrics statements="60" coveredstatements="60" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="9"/>
+        <line num="3" count="58" type="stmt"/>
+        <line num="4" count="58" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
+        <line num="14" count="50" type="stmt"/>
+        <line num="15" count="50" type="stmt"/>
+        <line num="16" count="50" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
@@ -49,22 +49,23 @@
         <line num="72" count="2" type="stmt"/>
         <line num="73" count="2" type="stmt"/>
         <line num="75" count="5" type="stmt"/>
-        <line num="80" count="1" type="stmt"/>
-        <line num="81" count="1" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-        <line num="83" count="1" type="stmt"/>
-        <line num="84" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="85" count="4" type="stmt"/>
-        <line num="86" count="4" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
-        <line num="90" count="1" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="94" count="1" type="stmt"/>
-        <line num="95" count="2" type="stmt"/>
-        <line num="96" count="2" type="stmt"/>
-        <line num="98" count="1" type="stmt"/>
-        <line num="103" count="1" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="82" count="2" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
+        <line num="84" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="85" count="8" type="stmt"/>
+        <line num="86" count="8" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="90" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="98" count="2" type="stmt"/>
+        <line num="99" count="2" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
       </file>
     </package>
     <package name="challenges.arrayBinarySearch">

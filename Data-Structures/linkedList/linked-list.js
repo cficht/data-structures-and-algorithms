@@ -87,9 +87,12 @@ class LinkedList {
       } else {
         listLength++;
         fromEnd = listLength - k;
+        if(fromEnd <= 0) return 'Exception';
         currentNode = null;
       }
     }
+    // console.log(fromEnd);
+    // console.log(k);
     currentNode = this.head;
     while(fromEnd > 1) {
       currentNode = currentNode.next;
