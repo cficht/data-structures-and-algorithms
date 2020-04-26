@@ -19,7 +19,7 @@ function mergeLists(list1, list2) {
   mergeArr.forEach(value => {
     mergedList.insert(value);
   });
-  return mergedList.toString();
+  return mergedList;
 }
 
 module.exports = { mergeLists };
