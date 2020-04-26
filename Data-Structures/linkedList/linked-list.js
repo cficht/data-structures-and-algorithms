@@ -87,7 +87,7 @@ class LinkedList {
       } else {
         listLength++;
         fromEnd = listLength - k;
-        if(fromEnd <= 0) return 'Exception';
+        if(fromEnd <= 0 || k < 0) return 'Exception';
         currentNode = null;
       }
     }
