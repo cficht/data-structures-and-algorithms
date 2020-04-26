@@ -183,4 +183,16 @@ describe('testing linked-list.js', () => {
     expect(linkedList.kthFromEnd(2)).toEqual(6);
   });
 
+  //middle testing
+
+  it('Return value of the node in the middle of the list with an odd length', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insert(10);
+    expect(linkedList.middle()).toEqual(6);
+  });
+
 });

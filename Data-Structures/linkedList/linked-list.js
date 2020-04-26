@@ -91,12 +91,32 @@ class LinkedList {
         currentNode = null;
       }
     }
-    // console.log(fromEnd);
-    // console.log(k);
     currentNode = this.head;
     while(fromEnd > 1) {
       currentNode = currentNode.next;
       fromEnd--;
+    }
+    return currentNode.value;
+  }
+
+  middle() {
+    let currentNode = this.head;
+    let listLength = 0;
+    let theMiddle = 0;
+    while(currentNode) {
+      if(currentNode.next){
+        listLength++;
+        currentNode = currentNode.next;
+      } else {
+        listLength++;
+        theMiddle = listLength / 2;
+        currentNode = null;
+      }
+    }
+    currentNode = this.head;
+    while(theMiddle > 1) {
+      currentNode = currentNode.next;
+      theMiddle--;
     }
     return currentNode.value;
   }
