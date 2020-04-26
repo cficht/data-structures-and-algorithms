@@ -52,8 +52,22 @@ class LinkedList {
   insertBefore(value, newValue) {
     const newNode = new Node(newValue, value);
     let currentNode = this.head;
+    while(currentNode) { 
+      if(currentNode.value === value){
+        const copy = Object.assign({}, currentNode);
+        currentNode.value = newNode.value;
+        currentNode.next = copy;
+        return;
+      }
+      currentNode = currentNode.next;
+    }
+  }
+
+  insertAfter(value, newValue) {
+    const newNode = new Node(newValue, value);
+    let currentNode = this.head;
     while(currentNode) {   
-      if(currentNode.next.value === value){
+      if(currentNode.value === value){
         newNode.next = currentNode.next;
         currentNode.next = newNode;
         return this.head;
@@ -61,6 +75,7 @@ class LinkedList {
       currentNode = currentNode.next;
     }
   }
+
 }
 
 module.exports = {

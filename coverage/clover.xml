@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587856047521" clover="3.2.0">
-  <project timestamp="1587856047521" name="All files">
-    <metrics statements="56" coveredstatements="56" conditionals="14" coveredconditionals="14" methods="10" coveredmethods="10" elements="80" coveredelements="80" complexity="0" loc="56" ncloc="56" packages="4" files="4" classes="4"/>
+<coverage generated="1587859492898" clover="3.2.0">
+  <project timestamp="1587859492898" name="All files">
+    <metrics statements="65" coveredstatements="65" conditionals="16" coveredconditionals="16" methods="11" coveredmethods="11" elements="92" coveredelements="92" complexity="0" loc="65" ncloc="65" packages="4" files="4" classes="4"/>
     <package name="Data-Structures.linkedList">
-      <metrics statements="35" coveredstatements="35" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+      <metrics statements="44" coveredstatements="44" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
       <file name="linked-list.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
-        <metrics statements="35" coveredstatements="35" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
-        <line num="3" count="26" type="stmt"/>
-        <line num="4" count="26" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="14" count="24" type="stmt"/>
-        <line num="15" count="24" type="stmt"/>
-        <line num="16" count="24" type="stmt"/>
+        <metrics statements="44" coveredstatements="44" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
+        <line num="3" count="48" type="stmt"/>
+        <line num="4" count="48" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="14" count="40" type="stmt"/>
+        <line num="15" count="40" type="stmt"/>
+        <line num="16" count="40" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
         <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="24" count="4" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
-        <line num="30" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
-        <line num="33" count="14" type="cond" truecount="2" falsecount="0"/>
-        <line num="34" count="14" type="stmt"/>
-        <line num="35" count="14" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="48" count="3" type="stmt"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="56" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="33" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="36" type="stmt"/>
+        <line num="35" count="36" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="44" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="48" count="15" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="70" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="2" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="75" count="5" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
       </file>
     </package>
     <package name="challenges.arrayBinarySearch">

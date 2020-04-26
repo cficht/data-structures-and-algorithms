@@ -1,6 +1,7 @@
 const { LinkedList } = require('./linked-list.js');
 
 describe('testing linked-list.js', () => {
+
   it('successfully instantiates an empty linked list', () => {
     const linkedList = new LinkedList();
 
@@ -88,7 +89,20 @@ describe('testing linked-list.js', () => {
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
   });
 
-  it('add a new node with the given newValue immediately before the first value node', () => {
+  it('adds multiple nodes to the end of the list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.append(10);
+    linkedList.append(12);
+    linkedList.append(14);
+
+    expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10 -> 12 -> 14');
+  });
+
+  it('adds a new node with the given newValue immediately before the first value node', () => {
     const linkedList = new LinkedList();
     linkedList.insert(2);
     linkedList.insert(4);
@@ -98,4 +112,38 @@ describe('testing linked-list.js', () => {
 
     expect(linkedList.toString()).toEqual('8 -> 6 -> 10 -> 4 -> 2');
   });
+
+  it('inserts a node before the first node of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insertBefore(8, 10);
+
+    expect(linkedList.toString()).toEqual('10 -> 8 -> 6 -> 4 -> 2');
+  });
+
+  it('adds a new node with the given newValue immediately after the first value node', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insertAfter(4, 10);
+
+    expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 10 -> 2');
+  });
+
+  it('inserts a node after the last node of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insertAfter(2, 10);
+
+    expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
+  });
+
 });
