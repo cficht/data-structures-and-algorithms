@@ -22,6 +22,13 @@ class Stack {
     this.top = this.top.pointer;
     return popVal;
   }
+
+  peek() {
+    if(!this.top) return 'Exception';
+    const peekVal = this.top.value;
+    return peekVal;
+  }
+
 }
 
 module.exports = {

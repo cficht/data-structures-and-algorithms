@@ -1,6 +1,6 @@
 const { Stack } = require('./stacks-and-queues.js');
 
-describe('testing stacks-and-queues.js', () => {
+describe('testing Stack class', () => {
 
   it('can successfully push onto a stack', () => {
     const stack = new Stack();
@@ -32,13 +32,25 @@ describe('testing stacks-and-queues.js', () => {
     expect(stack.pop()).toEqual(10);
   });
 
-  it('returns exception when emptying a stack', () => {
+  it('returns exception when using pop on an empty stack', () => {
     const stack = new Stack();
     stack.push(5);
     stack.push(10);
     stack.pop();
     stack.pop();
     expect(stack.pop()).toEqual('Exception');
+  });
+
+  it('can successfully peek the next item on the stack', () => {
+    const stack = new Stack();
+    stack.push(5);
+    stack.push(10);
+    expect(stack.peek()).toEqual(10);
+  });
+
+  it('returns exception when using peek on an empty stack', () => {
+    const stack = new Stack();
+    expect(stack.peek()).toEqual('Exception');
   });
 
 });
