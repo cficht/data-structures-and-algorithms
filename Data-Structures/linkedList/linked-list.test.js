@@ -78,6 +78,8 @@ describe('testing linked-list.js', () => {
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2');
   });
 
+  //append, insertBefore, insertAfter testing
+
   it('adds a new node with the given value to the end of the list', () => {
     const linkedList = new LinkedList();
     linkedList.insert(2);
@@ -144,6 +146,29 @@ describe('testing linked-list.js', () => {
     linkedList.insertAfter(2, 10);
 
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
+  });
+
+  //kthFromEnd testing
+
+  // it('Return the node’s value that is k from the end of the list, where is k is greater than the length of the list', () => {
+  //   const linkedList = new LinkedList();
+  //   linkedList.insert(2);
+  //   linkedList.insert(4);
+  //   linkedList.insert(6);
+  //   linkedList.insert(8);
+
+  //   expect(linkedList.kthFromEnd()).toEqual('8 -> 6 -> 4 -> 2');
+  // });
+
+  it('Return the node’s value that is k from the end of the list, where k is in the middle', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insert(10);
+
+    expect(linkedList.kthFromEnd(2)).toEqual(6);
   });
 
 });

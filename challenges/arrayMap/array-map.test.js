@@ -1,6 +1,6 @@
 const { map } = require('./array-map.js');
 
-describe('testing array-map.js', () => {
+describe.skip('testing array-map.js', () => {
   const testFunction1 = (x) => {
     return x + 5;
   };
