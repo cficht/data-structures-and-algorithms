@@ -15,6 +15,13 @@ class Stack {
     this.top = node;
     return node;
   }
+
+  pop() {
+    if(!this.top) return 'Exception';
+    const popVal = this.top.value;
+    this.top = this.top.pointer;
+    return popVal;
+  }
 }
 
 module.exports = {

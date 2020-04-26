@@ -25,4 +25,20 @@ describe('testing stacks-and-queues.js', () => {
     });
   });
 
+  it('can successfully pop off the stack', () => {
+    const stack = new Stack();
+    stack.push(5);
+    stack.push(10);
+    expect(stack.pop()).toEqual(10);
+  });
+
+  it('returns exception when emptying a stack', () => {
+    const stack = new Stack();
+    stack.push(5);
+    stack.push(10);
+    stack.pop();
+    stack.pop();
+    expect(stack.pop()).toEqual('Exception');
+  });
+
 });
