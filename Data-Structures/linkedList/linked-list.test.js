@@ -2,6 +2,8 @@ const { LinkedList } = require('./linked-list.js');
 
 describe('testing linked-list.js', () => {
 
+  //LinkedList testing
+
   it('successfully instantiates an empty linked list', () => {
     const linkedList = new LinkedList();
     expect(linkedList).toEqual({ head: null });
@@ -193,6 +195,17 @@ describe('testing linked-list.js', () => {
     linkedList.insert(8);
     linkedList.insert(10);
     expect(linkedList.middle()).toEqual(6);
+  });
+
+  it('Return value of the node in the middle of the list with an even length', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insert(10);
+    linkedList.insert(12);
+    expect(linkedList.middle()).toEqual('No Middle Node');
   });
 
 });

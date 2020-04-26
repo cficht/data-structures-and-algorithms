@@ -110,6 +110,7 @@ class LinkedList {
       } else {
         listLength++;
         theMiddle = listLength / 2;
+        if(Number.isInteger(theMiddle)) return 'No Middle Node';
         currentNode = null;
       }
     }
