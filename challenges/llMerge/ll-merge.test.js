@@ -1,7 +1,7 @@
 const { mergeLists } = require('./ll-merge.js');
 const { LinkedList } = require('../../Data-Structures/linkedList/linked-list.js');
 
-describe('testing ll-merge.js', () => {
+describe.skip('testing ll-merge.js', () => {
 
   it('merge two linked lists of the same length', () => {
     const list1 = new LinkedList();
