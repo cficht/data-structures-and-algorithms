@@ -29,6 +29,10 @@ class Stack {
     return peekVal;
   }
 
+  isEmpty() {
+    return !this.top ? true : false;
+  }
+
 }
 
 module.exports = {
