@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587930114712" clover="3.2.0">
-  <project timestamp="1587930114712" name="All files">
+<coverage generated="1587930235174" clover="3.2.0">
+  <project timestamp="1587930235174" name="All files">
     <metrics statements="81" coveredstatements="66" conditionals="22" coveredconditionals="16" methods="12" coveredmethods="9" elements="115" coveredelements="91" complexity="0" loc="81" ncloc="81" packages="4" files="4" classes="4"/>
     <package name="Data-Structures.linkedList">
       <metrics statements="60" coveredstatements="60" conditionals="16" coveredconditionals="16" methods="9" coveredmethods="9"/>
       <file name="linked-list.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
         <metrics statements="60" coveredstatements="60" conditionals="16" coveredconditionals="16" methods="9" coveredmethods="9"/>
-        <line num="3" count="68" type="stmt"/>
-        <line num="4" count="68" type="stmt"/>
-        <line num="10" count="17" type="stmt"/>
-        <line num="14" count="60" type="stmt"/>
-        <line num="15" count="60" type="stmt"/>
-        <line num="16" count="60" type="stmt"/>
+        <line num="3" count="69" type="stmt"/>
+        <line num="4" count="69" type="stmt"/>
+        <line num="10" count="18" type="stmt"/>
+        <line num="14" count="61" type="stmt"/>
+        <line num="15" count="61" type="stmt"/>
+        <line num="16" count="61" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
@@ -49,22 +49,22 @@
         <line num="72" count="2" type="stmt"/>
         <line num="73" count="2" type="stmt"/>
         <line num="75" count="5" type="stmt"/>
-        <line num="80" count="4" type="stmt"/>
-        <line num="81" count="4" type="stmt"/>
-        <line num="82" count="4" type="stmt"/>
-        <line num="83" count="4" type="stmt"/>
-        <line num="84" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="5" type="stmt"/>
+        <line num="81" count="5" type="stmt"/>
+        <line num="82" count="5" type="stmt"/>
+        <line num="83" count="5" type="stmt"/>
+        <line num="84" count="21" type="cond" truecount="2" falsecount="0"/>
         <line num="85" count="16" type="stmt"/>
         <line num="86" count="16" type="stmt"/>
-        <line num="88" count="4" type="stmt"/>
-        <line num="89" count="4" type="stmt"/>
-        <line num="90" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="91" count="2" type="stmt"/>
-        <line num="96" count="2" type="stmt"/>
-        <line num="97" count="2" type="stmt"/>
+        <line num="88" count="5" type="stmt"/>
+        <line num="89" count="5" type="stmt"/>
+        <line num="90" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="91" count="3" type="stmt"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="97" count="3" type="stmt"/>
         <line num="98" count="2" type="stmt"/>
         <line num="99" count="2" type="stmt"/>
-        <line num="101" count="2" type="stmt"/>
+        <line num="101" count="3" type="stmt"/>
         <line num="106" count="1" type="stmt"/>
       </file>
     </package>

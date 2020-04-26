@@ -4,14 +4,12 @@ describe('testing linked-list.js', () => {
 
   it('successfully instantiates an empty linked list', () => {
     const linkedList = new LinkedList();
-
     expect(linkedList).toEqual({ head: null });
   });
 
   it('properly inserts into the linked list', () => {
     const linkedList = new LinkedList();
     linkedList.insert(1);
-
     expect(linkedList).toEqual({ 
       head: { 
         next: null, 
@@ -23,7 +21,6 @@ describe('testing linked-list.js', () => {
     const linkedList = new LinkedList();
     linkedList.insert(1);
     linkedList.insert(2);
-
     expect(linkedList).toEqual({ 
       head: { 
         next: { 
@@ -38,7 +35,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(1);
     linkedList.insert(2);
     linkedList.insert(3);
-
     expect(linkedList).toEqual({ 
       head: { 
         next: { 
@@ -55,7 +51,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(1);
     linkedList.insert(2);
     linkedList.insert(3);
-
     expect(linkedList.includes(2)).toEqual(true);
   });
 
@@ -64,7 +59,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(2);
     linkedList.insert(4);
     linkedList.insert(6);
-
     expect(linkedList.includes(5)).toEqual(false);
   });
 
@@ -74,7 +68,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(4);
     linkedList.insert(6);
     linkedList.insert(8);
-
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2');
   });
 
@@ -87,7 +80,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.append(10);
-
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
   });
 
@@ -100,7 +92,6 @@ describe('testing linked-list.js', () => {
     linkedList.append(10);
     linkedList.append(12);
     linkedList.append(14);
-
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10 -> 12 -> 14');
   });
 
@@ -111,7 +102,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insertBefore(4, 10);
-
     expect(linkedList.toString()).toEqual('8 -> 6 -> 10 -> 4 -> 2');
   });
 
@@ -122,7 +112,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insertBefore(8, 10);
-
     expect(linkedList.toString()).toEqual('10 -> 8 -> 6 -> 4 -> 2');
   });
 
@@ -133,7 +122,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insertAfter(4, 10);
-
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 10 -> 2');
   });
 
@@ -144,7 +132,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insertAfter(2, 10);
-
     expect(linkedList.toString()).toEqual('8 -> 6 -> 4 -> 2 -> 10');
   });
 
@@ -157,7 +144,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insert(10);
-
     expect(linkedList.kthFromEnd(5)).toEqual('Exception');
   });
 
@@ -168,7 +154,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insert(10);
-
     expect(linkedList.kthFromEnd(4)).toEqual(10);
   });
 
@@ -179,8 +164,13 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insert(10);
-
     expect(linkedList.kthFromEnd(-1)).toEqual('Exception');
+  });
+
+  it('Return the node’s value that is k from the end of the list, where the linked list is of a size 1', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    expect(linkedList.kthFromEnd(0)).toEqual(2);
   });
 
   it('Return the node’s value that is k from the end of the list, where k is in the middle', () => {
@@ -190,7 +180,6 @@ describe('testing linked-list.js', () => {
     linkedList.insert(6);
     linkedList.insert(8);
     linkedList.insert(10);
-
     expect(linkedList.kthFromEnd(2)).toEqual(6);
   });
 
