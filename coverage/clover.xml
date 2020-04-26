@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587942645403" clover="3.2.0">
-  <project timestamp="1587942645403" name="All files">
+<coverage generated="1587942813867" clover="3.2.0">
+  <project timestamp="1587942813868" name="All files">
     <metrics statements="121" coveredstatements="16" conditionals="32" coveredconditionals="0" methods="18" coveredmethods="3" elements="171" coveredelements="19" complexity="0" loc="121" ncloc="121" packages="6" files="6" classes="6"/>
     <package name="Data-Structures.linkedList">
       <metrics statements="76" coveredstatements="1" conditionals="20" coveredconditionals="0" methods="10" coveredmethods="0"/>
@@ -88,12 +88,12 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="stacks-and-queues.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/stacksAndQueues/stacks-and-queues.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
       </file>
     </package>

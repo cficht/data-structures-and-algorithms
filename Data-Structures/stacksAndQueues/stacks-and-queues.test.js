@@ -12,4 +12,17 @@ describe('testing stacks-and-queues.js', () => {
     });
   });
 
+  it('can successfully push multiple values onto a stack', () => {
+    const stack = new Stack();
+    stack.push(5);
+    stack.push(10);
+    expect(stack).toEqual({ 
+      top: { 
+        pointer: { 
+          pointer: null, 
+          value: 5 }, 
+        value: 10 } 
+    });
+  });
+
 });
