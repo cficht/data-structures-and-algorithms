@@ -5,11 +5,15 @@ function mergeLists(list1, list2) {
   let currentL1 = list1.head;
   let currentL2 = list2.head;
   let mergeArr = [];
-  while(currentL2 || currentL1) {
-    mergeArr.push(currentL1.value);
-    mergeArr.push(currentL2.value);
-    currentL1 = currentL1.next;
-    currentL2 = currentL2.next;
+  while(currentL1 || currentL2) {
+    if(currentL1) {
+      mergeArr.push(currentL1.value);
+      currentL1 = currentL1.next;
+    }
+    if(currentL2) {
+      mergeArr.push(currentL2.value);
+      currentL2 = currentL2.next;
+    } 
   }
   mergeArr = mergeArr.reverse();
   mergeArr.forEach(value => {
