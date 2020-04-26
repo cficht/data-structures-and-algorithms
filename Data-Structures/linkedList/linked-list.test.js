@@ -208,4 +208,10 @@ describe('testing linked-list.js', () => {
     expect(linkedList.middle()).toEqual('No Middle Node');
   });
 
+  it('Return value of the node in the middle of the list with a length of 1', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    expect(linkedList.middle()).toEqual(2);
+  });
+
 });
