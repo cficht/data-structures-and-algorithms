@@ -1,6 +1,6 @@
 const { LinkedList } = require('./linked-list.js');
 
-describe('testing linked-list.js', () => {
+describe.skip('testing linked-list.js', () => {
 
   //LinkedList testing
 
