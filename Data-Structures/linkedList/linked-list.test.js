@@ -161,6 +161,17 @@ describe('testing linked-list.js', () => {
     expect(linkedList.kthFromEnd(5)).toEqual('Exception');
   });
 
+  it('Return the node’s value that is k from the end of the list, Where k and the length of the list are the same', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(2);
+    linkedList.insert(4);
+    linkedList.insert(6);
+    linkedList.insert(8);
+    linkedList.insert(10);
+
+    expect(linkedList.kthFromEnd(4)).toEqual(10);
+  });
+
   it('Return the node’s value that is k from the end of the list, where k is in the middle', () => {
     const linkedList = new LinkedList();
     linkedList.insert(2);
