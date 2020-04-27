@@ -1,7 +1,7 @@
 const { Stack } = require('./stacks-and-queues.js');
 const { Queue } = require('./stacks-and-queues.js');
 
-describe('testing Stack class', () => {
+describe.skip('testing Stack class', () => {
 
   it('can successfully push onto a stack', () => {
     const stack = new Stack();
@@ -77,7 +77,7 @@ describe('testing Stack class', () => {
 
 });
 
-describe('testing Queue class', () => {
+describe.skip('testing Queue class', () => {
 
   it('can successfully enqueue into a queue', () => {
     const queue = new Queue();
