@@ -13,7 +13,7 @@ describe('testing queue-with-stacks.js', () => {
     queue.enqueue(20);
     queue.enqueue(15);
     queue.enqueue(10);
-    expect(queue.stack1.peek()).toEqual(20);
+    expect(queue.stack1.peek()).toEqual(10);
   });
   
 });
