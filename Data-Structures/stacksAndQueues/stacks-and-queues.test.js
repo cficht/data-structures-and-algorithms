@@ -111,4 +111,22 @@ describe('testing Queue class', () => {
     expect(queue.dequeue()).toEqual(2);
   });
 
+  it('can successfully peek into a queue, seeing the expected value', () => {
+    const queue = new Queue();
+    queue.enqueue(2);
+    queue.enqueue(4);
+    queue.enqueue(6);
+    expect(queue.peek()).toEqual(2);
+  });
+
+  it('dequeue on an empty queue returns exception', () => {
+    const queue = new Queue();
+    expect(queue.dequeue()).toEqual('Exception');
+  });
+
+  it('peek on an empty queue returns exception', () => {
+    const queue = new Queue();
+    expect(queue.peek()).toEqual('Exception');
+  });
+
 });

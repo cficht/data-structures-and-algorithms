@@ -59,6 +59,12 @@ class Queue {
     this.front = this.front.pointer;
     return dequeuedNode;
   }
+
+  peek() {
+    if(!this.front) return 'Exception';
+    const peekVal = this.front.value;
+    return peekVal;
+  }
 }
 
 
