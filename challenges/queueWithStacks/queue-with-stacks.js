@@ -10,7 +10,16 @@ class PseudoQueue {
     this.stack1.push(value);
   }
 
-
+  dequeue() {
+    let stack1Track = this.stack1;
+    let moveVal;
+    while(stack1Track) {
+      moveVal = this.stack1.pop();
+      this.stack2.push(moveVal);
+      stack1Track = this.stack1.top;
+    }
+    return moveVal;
+  }
 }
 
 module.exports = {
