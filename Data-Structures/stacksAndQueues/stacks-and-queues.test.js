@@ -1,4 +1,5 @@
 const { Stack } = require('./stacks-and-queues.js');
+const { Queue } = require('./stacks-and-queues.js');
 
 describe('testing Stack class', () => {
 
@@ -72,6 +73,34 @@ describe('testing Stack class', () => {
     stack.push(5);
     stack.push(10);
     expect(stack.isEmpty()).toEqual(false);
+  });
+
+});
+
+
+describe('testing Queue class', () => {
+
+  it('can successfully enqueue into a queue', () => {
+    const queue = new Queue();
+    queue.enqueue(2);
+    expect(queue).toEqual({ 
+      front: { 
+        pointer: null, 
+        value: 2 } 
+    });
+  });
+
+  it('can successfully enqueue multiple values into a queue', () => {
+    const queue = new Queue();
+    queue.enqueue(2);
+    queue.enqueue(4);
+    expect(queue).toEqual({ 
+      front: { 
+        pointer: { 
+          pointer: null, 
+          value: 4 }, 
+        value: 2 } 
+    });
   });
 
 });

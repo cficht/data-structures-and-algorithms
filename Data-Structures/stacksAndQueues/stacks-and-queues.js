@@ -32,9 +32,30 @@ class Stack {
   isEmpty() {
     return !this.top ? true : false;
   }
-
 }
 
+
+class Queue {
+  constructor() {
+    this.front = null;
+  }
+
+  enqueue(value) {
+    const node = new Node(value, null);
+    let currentNode = this.front;
+    if(!currentNode) return this.front = node;   
+    while(currentNode) {
+      if(currentNode.pointer === null) {
+        currentNode.pointer = node;
+        return this.front;
+      }
+      currentNode = currentNode.pointer;  
+    }
+  }
+}
+
+
 module.exports = {
-  Stack
+  Stack,
+  Queue
 };
