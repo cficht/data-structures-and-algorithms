@@ -119,6 +119,27 @@ describe('testing Queue class', () => {
     expect(queue.peek()).toEqual(2);
   });
 
+  it('can successfully empty a queue after multiple dequeues', () => {
+    const queue = new Queue();
+    queue.enqueue(2);
+    queue.enqueue(4);
+    queue.dequeue();
+    queue.dequeue();
+    expect(queue.isEmpty()).toEqual(true);
+  });
+
+  it('returns false since the queue is not empty', () => {
+    const queue = new Queue();
+    queue.enqueue(2);
+    queue.enqueue(4);
+    expect(queue.isEmpty()).toEqual(false);
+  });
+
+  it('can successfully instantiate an empty queue', () => {
+    const queue = new Queue();
+    expect(queue.isEmpty()).toEqual(true);
+  });
+
   it('dequeue on an empty queue returns exception', () => {
     const queue = new Queue();
     expect(queue.dequeue()).toEqual('Exception');

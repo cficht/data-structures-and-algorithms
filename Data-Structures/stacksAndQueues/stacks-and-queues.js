@@ -65,6 +65,10 @@ class Queue {
     const peekVal = this.front.value;
     return peekVal;
   }
+
+  isEmpty() {
+    return !this.front ? true : false;
+  }
 }
 
 
