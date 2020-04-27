@@ -6,3 +6,4 @@
 4) linkedList - DataStructure
 5) llMerge ![llMerge image](./challenges/llMerge/ll-merge-whiteboard.JPG)
 6) stacksAndQueues - DataStructure
+7) queueWithStacks ![queueWithStacks image](./challenges/queueWithStacks/queue-with-stacks-whiteboard.JPG)
