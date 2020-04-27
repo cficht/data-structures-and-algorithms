@@ -103,4 +103,12 @@ describe('testing Queue class', () => {
     });
   });
 
+  it('can successfully dequeue out of a queue the expected value', () => {
+    const queue = new Queue();
+    queue.enqueue(2);
+    queue.enqueue(4);
+    queue.enqueue(6);
+    expect(queue.dequeue()).toEqual(2);
+  });
+
 });

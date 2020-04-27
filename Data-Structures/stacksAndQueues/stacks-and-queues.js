@@ -52,6 +52,13 @@ class Queue {
       currentNode = currentNode.pointer;  
     }
   }
+
+  dequeue() {
+    if(!this.front) return 'Exception';
+    const dequeuedNode = this.front.value;
+    this.front = this.front.pointer;
+    return dequeuedNode;
+  }
 }
 
 
