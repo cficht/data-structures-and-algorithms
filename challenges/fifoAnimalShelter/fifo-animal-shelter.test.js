@@ -128,4 +128,29 @@ describe('testing fifo-animal-shelter.js', () => {
     expect(shelter.dequeue('dog')).toEqual(dog);
   });
 
+  it('removes the first animal with no pref', () => {
+    const shelter = new AnimalShelter();
+    const cat = {
+      name: 'Otto',
+      type: 'cat'
+    };
+    const cat2 = {
+      name: 'Frankie',
+      type: 'cat'
+    };
+    const cat3 = {
+      name: 'Chainsaw',
+      type: 'cat'
+    };
+    const dog = {
+      name: 'Fido',
+      type: 'dog'
+    };
+    shelter.enqueue(cat);
+    shelter.enqueue(cat2);
+    shelter.enqueue(cat3);
+    shelter.enqueue(dog);
+    expect(shelter.dequeue()).toEqual(cat);
+  });
+
 });

@@ -13,7 +13,8 @@ class AnimalShelter {
   }
 
   dequeue(pref) {
-    if(pref !== 'cat' && pref !== 'dog') return null;
+    if(pref !== 'cat' && pref !== 'dog' && pref) return null;
+    if(!pref) return this.animals[0];
     let prefAnimal;
     this.animals.forEach((animal, i) => {
       if(pref === animal.type) {
