@@ -12,6 +12,18 @@ class AnimalShelter {
     }
   }
 
+  dequeue(pref) {
+    if(pref !== 'cat' && pref !== 'dog') return null;
+    let prefAnimal;
+    this.animals.forEach((animal, i) => {
+      if(pref === animal.type) {
+        prefAnimal = animal;
+        this.animals.splice(i, 1);
+      }
+    });
+    return prefAnimal;
+  }
+
 }
 
 module.exports = {

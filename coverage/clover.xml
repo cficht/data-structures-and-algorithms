@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1588033392691" clover="3.2.0">
-  <project timestamp="1588033392691" name="All files">
-    <metrics statements="163" coveredstatements="18" conditionals="52" coveredconditionals="4" methods="31" coveredmethods="2" elements="246" coveredelements="24" complexity="0" loc="163" ncloc="163" packages="8" files="8" classes="8"/>
+<coverage generated="1588034663657" clover="3.2.0">
+  <project timestamp="1588034663658" name="All files">
+    <metrics statements="169" coveredstatements="24" conditionals="58" coveredconditionals="10" methods="33" coveredmethods="4" elements="260" coveredelements="38" complexity="0" loc="169" ncloc="169" packages="8" files="8" classes="8"/>
     <package name="Data-Structures.linkedList">
       <metrics statements="76" coveredstatements="1" conditionals="20" coveredconditionals="0" methods="10" coveredmethods="0"/>
       <file name="linked-list.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
@@ -162,15 +162,21 @@
       </file>
     </package>
     <package name="challenges.fifoAnimalShelter">
-      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
       <file name="fifo-animal-shelter.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/challenges/fifoAnimalShelter/fifo-animal-shelter.js">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="7" count="5" type="cond" truecount="4" falsecount="0"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
+        <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="7" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="8" count="17" type="stmt"/>
+        <line num="9" count="17" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="16" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
     </package>
     <package name="challenges.llMerge">
