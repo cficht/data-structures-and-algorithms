@@ -1,6 +1,6 @@
 const { PseudoQueue } = require('./queue-with-stacks.js');
 
-describe('testing queue-with-stacks.js', () => {
+describe.skip('testing queue-with-stacks.js', () => {
 
   it('can successfully enqueue into the PseudoQueue', () => {
     const queue = new PseudoQueue();
