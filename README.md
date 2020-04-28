@@ -7,4 +7,4 @@
 5) llMerge ![llMerge image](./challenges/llMerge/ll-merge-whiteboard.JPG)
 6) stacksAndQueues - DataStructure
 7) queueWithStacks ![queueWithStacks image](./challenges/queueWithStacks/queue-with-stacks-whiteboard.JPG)
-8) fifoAnimalShelter
+8) fifoAnimalShelter ![fifoAnimalShelter image](./challenges/fifoAnimalShelter/fifo-animal-shelter-whiteboard.JPG)
