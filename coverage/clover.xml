@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587951351399" clover="3.2.0">
-  <project timestamp="1587951351400" name="All files">
-    <metrics statements="146" coveredstatements="41" conditionals="48" coveredconditionals="16" methods="26" coveredmethods="11" elements="220" coveredelements="68" complexity="0" loc="146" ncloc="146" packages="6" files="6" classes="6"/>
+<coverage generated="1588034884470" clover="3.2.0">
+  <project timestamp="1588034884470" name="All files">
+    <metrics statements="170" coveredstatements="25" conditionals="61" coveredconditionals="13" methods="33" coveredmethods="4" elements="264" coveredelements="42" complexity="0" loc="170" ncloc="170" packages="8" files="8" classes="8"/>
     <package name="Data-Structures.linkedList">
       <metrics statements="76" coveredstatements="1" conditionals="20" coveredconditionals="0" methods="10" coveredmethods="0"/>
       <file name="linked-list.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/linkedList/linked-list.js">
@@ -85,41 +85,41 @@
       </file>
     </package>
     <package name="Data-Structures.stacksAndQueues">
-      <metrics statements="32" coveredstatements="32" conditionals="16" coveredconditionals="16" methods="11" coveredmethods="11"/>
+      <metrics statements="32" coveredstatements="1" conditionals="16" coveredconditionals="0" methods="11" coveredmethods="0"/>
       <file name="stacks-and-queues.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/Data-Structures/stacksAndQueues/stacks-and-queues.js">
-        <metrics statements="32" coveredstatements="32" conditionals="16" coveredconditionals="16" methods="11" coveredmethods="11"/>
-        <line num="3" count="26" type="stmt"/>
-        <line num="4" count="26" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="14" count="13" type="stmt"/>
-        <line num="15" count="13" type="stmt"/>
-        <line num="16" count="13" type="stmt"/>
-        <line num="20" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="27" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="40" count="9" type="stmt"/>
-        <line num="44" count="13" type="stmt"/>
-        <line num="45" count="13" type="stmt"/>
-        <line num="46" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="47" count="7" type="stmt"/>
-        <line num="48" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="49" count="7" type="stmt"/>
-        <line num="50" count="7" type="stmt"/>
-        <line num="52" count="2" type="stmt"/>
-        <line num="57" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="58" count="3" type="stmt"/>
-        <line num="59" count="3" type="stmt"/>
-        <line num="60" count="3" type="stmt"/>
-        <line num="64" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="1" type="stmt"/>
-        <line num="66" count="1" type="stmt"/>
-        <line num="70" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="75" count="1" type="stmt"/>
+        <metrics statements="32" coveredstatements="1" conditionals="16" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="57" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="64" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="70" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="75" count="2" type="stmt"/>
       </file>
     </package>
     <package name="challenges.arrayBinarySearch">
@@ -161,6 +161,25 @@
         <line num="18" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="challenges.fifoAnimalShelter">
+      <metrics statements="13" coveredstatements="13" conditionals="13" coveredconditionals="13" methods="4" coveredmethods="4"/>
+      <file name="fifo-animal-shelter.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/challenges/fifoAnimalShelter/fifo-animal-shelter.js">
+        <metrics statements="13" coveredstatements="13" conditionals="13" coveredconditionals="13" methods="4" coveredmethods="4"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="7" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="9" count="21" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="5" type="cond" truecount="5" falsecount="0"/>
+        <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="challenges.llMerge">
       <metrics statements="17" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="ll-merge.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/challenges/llMerge/ll-merge.js">
@@ -181,6 +200,23 @@
         <line num="19" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="challenges.queueWithStacks">
+      <metrics statements="11" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="queue-with-stacks.js" path="/Users/Fitch/alchemy/career-track/data-structures-and-algorithms/challenges/queueWithStacks/queue-with-stacks.js">
+        <metrics statements="11" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
       </file>
     </package>
